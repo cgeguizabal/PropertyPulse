@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --grid-cols-70-30: 70% 28%;
 }
 
 @theme inline {
@@ -14,7 +15,18 @@
 
 @theme {
   --font-sans: Poppins, sans-serif;
-  --grid-cols-70-30: 70% 28%;
+
+  --grid-template-columns-70\/30: 70% 28%;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 }
 
 @media (prefers-color-scheme: light) {
