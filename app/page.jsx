@@ -1,6 +1,13 @@
-"use client";
+import Hero from "@/components/Hero";
+import InfoBoxes from "@/components/InfoBoxes";
+
 function HomePage() {
-  return <div className="text-2xl">Home Page</div>;
+  return (
+    <>
+      <Hero />
+      <InfoBoxes />
+    </>
+  );
 }
 
 export default HomePage;
