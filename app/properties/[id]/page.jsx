@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import connectDB from "@/config/database";
 import PropertyDetails from "@/components/PropertiesDetails";
 import Property from "@/models/Property";
@@ -6,8 +8,10 @@ import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 
 const PropertyPage = async ({ params }) => {
+  const resolvedParams = await params; // <-- Await params here
+
   await connectDB();
-  const property = await Property.findById(params.id).lean();
+  const property = await Property.findById(resolvedParams.id).lean();
 
   return (
     <>
@@ -25,8 +29,7 @@ const PropertyPage = async ({ params }) => {
 
       <section className="bg-blue-50">
         <div className="container m-auto py-10 px-6">
-          <div className="grid grid-cols-1 md:grid-cols-70-30 w-full gap-6">
-            {/* Property info*/}
+          <div className="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
             <PropertyDetails property={property} />
           </div>
         </div>
