@@ -11,6 +11,7 @@ import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 function Navbar() {
   const { data: session } = useSession();
+  const profileImage = session?.user?.image;
 
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isProfileMenuOpen, setProfileMenuOpen] = useState(false);
@@ -157,7 +158,7 @@ function Navbar() {
                   <div>
                     <button
                       type="button"
-                      className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                      className="relative cursor-pointer flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                       id="user-menu-button"
                       aria-expanded="false"
                       aria-haspopup="true"
@@ -167,7 +168,9 @@ function Navbar() {
                       <span className="sr-only">Open user menu</span>
                       <Image
                         className="h-8 w-8 rounded-full"
-                        src={profileDefault}
+                        src={profileImage || profileDefault}
+                        width={40}
+                        height={40}
                         alt=""
                       />
                     </button>
@@ -206,6 +209,10 @@ function Navbar() {
                         role="menuitem"
                         tabIndex="-1"
                         id="user-menu-item-2"
+                        onClick={() => {
+                          setProfileMenuOpen(false);
+                          signOut();
+                        }}
                       >
                         Sign Out
                       </button>
