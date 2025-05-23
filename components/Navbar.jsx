@@ -192,6 +192,7 @@ function Navbar() {
                         role="menuitem"
                         tabIndex="-1"
                         id="user-menu-item-0"
+                        onClick={() => setProfileMenuOpen(false)}
                       >
                         Your Profile
                       </Link>
@@ -201,6 +202,7 @@ function Navbar() {
                         role="menuitem"
                         tabIndex="-1"
                         id="user-menu-item-2"
+                        onClick={() => setProfileMenuOpen(false)}
                       >
                         Saved Properties
                       </Link>
