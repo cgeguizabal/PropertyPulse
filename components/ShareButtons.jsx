@@ -51,7 +51,6 @@ const ShareButtons = ({ property }) => {
           <EmailIcon size={40} round={true} />
         </EmailShareButton>
       </div>{" "}
-      *
     </>
   );
 };
