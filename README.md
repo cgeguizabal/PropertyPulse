@@ -38,11 +38,11 @@ https://property-pulse-omega-wheat.vercel.app/
 - ✅ **Responsive Maps** with accurate location display
 - ✅ **Create a Profile** before posting or messaging
 - ✅ **Secure Messaging System**
-  - Send / receive messages
-  - Unread message notifications
+- ✅ Send / receive messages
+- ✅  Unread message notifications
 - ✅ **Notification System**
-  - New message notifications
-  - Read and delete notifications
+- ✅  New message notifications
+ -✅  Read and delete notifications
 - ✅ **Mobile-Friendly & Fully Responsive UI**
 - ✅ **Loading States** with React Spinners
 - ✅ **Social Sharing** with React Share
