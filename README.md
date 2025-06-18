@@ -15,7 +15,7 @@ https://property-pulse-omega-wheat.vercel.app/
 ## ⚙️ Tech Stack
 
 - ⚛️ **Next.js** — Server-side rendering and static generation
-- 💅 **Tailwind CSS** — Utility-first CSS framework
+- 🟦 **Tailwind CSS** — Utility-first CSS framework
 - 🔗 **NextAuth.js** — Google OAuth login
 - 🌿 **MongoDB** — NoSQL database
 - 🧬 **Mongoose** — ODM for MongoDB
