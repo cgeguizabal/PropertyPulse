@@ -22,7 +22,7 @@ https://property-pulse-omega-wheat.vercel.app/
 - 🗺️ **Mapbox + map-gl** — Interactive property maps
 - 📦 **Cloudinary** — Image storage and delivery
 - 📍 **Geocode** — Geolocation services
-- 📸 **PhotoSwipe + PhotoSwipe Gallery** — Lightbox for property images
+- 📸 **PhotoSwipe + PhotoSwipe Gallery** 
 - 🔔 **Toastify** — User-friendly toast notifications
 - 💌 **React Icons** — Icon library
 - 🔁 **React Spinners** — Loading spinners
