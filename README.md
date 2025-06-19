@@ -42,7 +42,7 @@ https://property-pulse-omega-wheat.vercel.app/
 - ✅  Unread message notifications
 - ✅ **Notification System**
 - ✅  New message notifications
- -✅  Read and delete notifications
+- ✅  Read and delete notifications
 - ✅ **Mobile-Friendly & Fully Responsive UI**
 - ✅ **Loading States** with React Spinners
 - ✅ **Social Sharing** with React Share
